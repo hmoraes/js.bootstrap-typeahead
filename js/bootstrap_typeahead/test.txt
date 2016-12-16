@@ -1,0 +1,14 @@
+How to use?
+===========
+
+This should be setup before rendering a page. See `fanstatic`_ for more
+information::
+
+  >>> from fanstatic import init_needed
+  >>> needed = init_needed(base_url='http://localhost')
+
+You can import ajax_typeahead from ``js.bootstrap_typeahead`` and ``.need`` it
+where you want these resources to be included on a page::
+
+  >>> from js.bootstrap_typeahead import ajax_typeahead
+  >>> ajax_typeahead.need()
